@@ -33,14 +33,13 @@
  */
 
 import { css } from '@emotion/react';
-import CssBaseline from '@mui/material/CssBaseline';
 import {
-  Box,
+  Box, CssBaseline, TextField, Button
   // useTheme
 } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Logo from '../../assets/images/icon_144x144.png';
+import Logo from '../../assets/images/icon_512x512.png';
 import packageJson from '../../../package.json';
 
 const ProductScan = () => {
@@ -51,6 +50,7 @@ const ProductScan = () => {
       display: flex;
       flex-direction: column;
       width: 100%;
+      font-family: 'Playfair Display', serif;
     `,
     logo: css`
       display: block;
@@ -70,12 +70,16 @@ const ProductScan = () => {
       <Box css={styles.box}>
         <img alt="DHA" src={Logo} css={styles.logo} />
         <Typography component="h5" variant="h5">
-          Take a photo of the ingredients list on the back of your hair product.
+          Paste the list of ingredients below.
         </Typography>
-        <form action="server.cgi" method="post" encType="multipart/form-data">
-          <input type="file" name="image" accept="image/*" capture="user" />
-          <input type="submit" value="Upload" />
-        </form>
+        <TextField
+          id="outlined-textarea"
+          label="Ingredient list"
+          placeholder="Paste here"
+          margin="normal"
+          multiline
+        />
+        <Button variant="contained">Proccess</Button>
         <Typography css={styles.version}>v{packageJson.version}</Typography>
       </Box>
     </Container>

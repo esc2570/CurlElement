@@ -31,20 +31,9 @@
  * with your contact information to: robert.a.kayl.civ@mail.mil
  * Government Agency Point of Contact for Original Software - Program Manager: robert.a.kayl.civ@mail.mil
  */
-import { Button, Typography } from '@mui/material';
-import * as React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { State } from 'store/rootReducer';
-import { incrementCounter } from 'store/slices/counterSlice';
+import { Typography } from '@mui/material';
 
 const Home = () => {
-  const count = useSelector((state: State) => state.counterState.count);
-  const dispatch = useDispatch();
-
-  const handleIncrementClick = (event: React.ChangeEvent<unknown>) => {
-    dispatch(incrementCounter());
-  };
-
   return (
     <>
       <Typography variant="h3">Curl Element</Typography>
