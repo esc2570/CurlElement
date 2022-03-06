@@ -47,65 +47,18 @@ const Home = () => {
 
   return (
     <>
-      <Typography variant="h3">PWA-Starter</Typography>
+      <Typography variant="h3">Curl Element</Typography>
       <Typography gutterBottom>
-        This application is a react starter application used by DHA developers for developing
-        progressive web applications.
+        This application assists people with different kinds of hair types, and allows them to keep
+        their hair as healthy as possible.
       </Typography>
-      <Typography gutterBottom>This project was bootstrapped with Create React App.</Typography>
       <Typography variant="h4">Getting Started</Typography>
       <ul>
-        <li>git clone git@bitbucket.org:wmtp/pwa-starter.git</li>
-        <li>cd pwa-starter</li>
-        <li>npm i</li>
-        <li>npm start</li>
+        <Typography gutterBottom>
+          Go to our Product Scan tab to take a look at your products, or head to the Guide tab for
+          some tips and tricks.
+        </Typography>
       </ul>
-      <Typography variant="h4">New Project Instructions</Typography>
-      <ul>
-        <li>Authentication</li>
-        <ul>
-          <li>
-            If the app needs authentication, uncomment all lines of code for account setup and login
-            in file below
-          </li>
-          <li>File path pages/Routes/RequireAuth.tsx</li>
-          <li>
-            User Timeout - Uncomment lines above to have user timeout enabled and redirected to
-            login after 1hr.
-          </li>
-          <li>File path pages/providers/AuthProvider.tsx</li>
-        </ul>
-        <li>.gitignore</li>
-        <ul>
-          <li>Uncomment build folder if its not needed in the repository for CI/CD or hosting.</li>
-        </ul>
-        <li>package.json</li>
-        <ul>
-          <li>
-            Add or replace the values for: name, version, author, description, repository.url, and
-            bug.url.
-          </li>
-        </ul>
-        <li>Copyright Headers</li>
-        <ul>
-          <li>Add copyright headers to every new file.</li>
-          <li>Add the file name on the first line.</li>
-          <li>Add the file description on the second line</li>
-          <li>
-            Replace firstName, lastName, and date for the line &quot;Created by firstName lastName
-            on date&quot;.
-          </li>
-        </ul>
-        <li>
-          Search and replace all instances of &quot;pwa-starter&quot; with your application name in
-          all project files.
-        </li>
-      </ul>
-      <Typography variant="h4">Example of React Component</Typography>
-      <Typography gutterBottom>Redux Counter: {count}</Typography>
-      <Button color="primary" onClick={handleIncrementClick} variant="contained">
-        Increment
-      </Button>
     </>
   );
 };

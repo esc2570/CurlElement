@@ -1,0 +1,80 @@
+{
+  "products": [
+    {
+      "name": "Silicons",
+      "aliases": ""
+    },
+    {
+      "name": "Sulfates",
+      "aliases": "ALS, Ammonium Lauryl Sulfate, SLS, Sodium Lauryl Sulfate"
+    },
+    {
+      "name": "Parabens",
+      "aliases": ""
+    },
+    {
+      "name": "Lanolin",
+      "aliases": ""
+    },
+    {
+      "name": "Petrolatum",
+      "aliases": ""
+    },
+    {
+      "name": "Mineral oils",
+      "aliases": ""
+    },
+    {
+      "name": "Artificial Pigments",
+      "aliases": "FD&C, D&C"
+    },
+    {
+      "name": "Diethanolamine",
+      "aliases": "Dea"
+    },
+    {
+      "name": "Propylene Glycol",
+      "aliases": "PG"
+    },
+    {
+      "name": "Dimethicone",
+      "aliases": ""
+    },
+    {
+      "name": "Momoethanolamine",
+      "aliases": "MEA"
+    },
+    {
+      "name": "Triethanolamine",
+      "aliases": "TEA"
+    },
+    {
+      "name": "Formaldehyde",
+      "aliases": ""
+    },
+    {
+      "name": "Diazolidinyl Urea",
+      "aliases": ""
+    },
+    {
+      "name": "Imidazolidinyl Urea",
+      "aliases": ""
+    },
+    {
+      "name": "Propanol",
+      "aliases": ""
+    },
+    {
+      "name": "Salicylic Acid",
+      "aliases": ""
+    },
+    {
+      "name": "Phthalate",
+      "aliases": ""
+    },
+    {
+      "name": "Alcohols",
+      "aliases": "Alcohol denatured, SD alcohol 40, Ethyl alcohol, Propanol alcohol, Isopropanol alcohol, Benzyl alcohol, Ethanol alcohol"
+    }
+  ]
+}

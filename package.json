@@ -1,17 +1,17 @@
 {
-  "name": "pwa-starter",
-  "version": "2.1.1",
-  "author": "",
-  "description": "",
+  "name": "CurlElement",
+  "version": "1.0",
+  "author": "Ella Cronk",
+  "description": "Keep your curls happy and healthy",
   "license": "MIT",
   "private": false,
   "homepage": "/pwa-starter",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/wmtp/pwa-starter.git"
+    "url": "git+ssh://git@github.com:esc2570/curl-element.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/wmtp/pwa-starter"
+    "url": ""
   },
   "browserslist": {
     "production": [

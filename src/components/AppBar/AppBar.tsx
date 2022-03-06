@@ -49,7 +49,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { useTheme } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import logo from 'assets/images/dha.png';
+import logo from 'assets/images/icon_192x192.png';
 import { Rating } from 'dha-rating';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -144,7 +144,7 @@ export default function TemporaryDrawer() {
         <Toolbar disableGutters variant="dense">
           <Typography variant="h6" noWrap css={styles.title}>
             <Link to="/">
-              <img alt="DHA logo" css={styles.toolbarLogo} src={logo} />
+              <img alt="Curly Elements Logo" css={styles.toolbarLogo} src={logo} />
             </Link>
           </Typography>
           <IconButton
@@ -181,12 +181,12 @@ export default function TemporaryDrawer() {
               <ListItemText primary="Home" />
             </ListItem>
           </Link>
-          <Link to="/About" css={styles.link}>
+          <Link to="/ProductScan" css={styles.link}>
             <ListItem onClick={handleDrawerClose}>
               <ListItemIcon>
                 <HelpOutline />
               </ListItemIcon>
-              <ListItemText primary="About" />
+              <ListItemText primary="Product Scan" />
             </ListItem>
           </Link>
           <List>

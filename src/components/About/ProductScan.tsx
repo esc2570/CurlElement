@@ -34,15 +34,16 @@
 
 import { css } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Box, 
-  // useTheme 
+import {
+  Box,
+  // useTheme
 } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Logo from '../../assets/images/dha.png';
+import Logo from '../../assets/images/icon_144x144.png';
 import packageJson from '../../../package.json';
 
-const About = () => {
+const ProductScan = () => {
   // const theme = useTheme();
 
   const styles = {
@@ -69,17 +70,16 @@ const About = () => {
       <Box css={styles.box}>
         <img alt="DHA" src={Logo} css={styles.logo} />
         <Typography component="h5" variant="h5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat.
+          Take a photo of the ingredients list on the back of your hair product.
         </Typography>
+        <form action="server.cgi" method="post" encType="multipart/form-data">
+          <input type="file" name="image" accept="image/*" capture="user" />
+          <input type="submit" value="Upload" />
+        </form>
         <Typography css={styles.version}>v{packageJson.version}</Typography>
       </Box>
     </Container>
   );
 };
 
-export default About;
+export default ProductScan;

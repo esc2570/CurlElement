@@ -34,9 +34,7 @@
 import { css } from '@emotion/react';
 import { AppBar, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import dhaLogo from 'assets/images/dha-logo.png';
-import mhsLogo from 'assets/images/mhs-logo.png';
-import sddLogo from 'assets/images/sdd-logo.png';
+import logo from 'assets/images/icon_72x72.png';
 import { useEffect, useState } from 'react';
 import packageJson from '../../../package.json';
 
@@ -74,23 +72,7 @@ const Footer = () => {
     <AppBar css={styles.footerRoot} position="static">
       <Grid container alignItems="center" direction="column">
         <Grid css={styles.logos} container item justifyContent="space-around">
-          <a
-            href="https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img alt="Defense Health Agency logo" src={dhaLogo} />
-          </a>
-          <a href="https://www.health.mil" rel="noopener noreferrer" target="_blank">
-            <img alt="Military Health System logo" src={mhsLogo} />
-          </a>
-          <a
-            href="https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/Information-Operations-J6-Health-IT/Solution-Delivery-Division"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img alt="Solution Delivery Division logo" src={sddLogo} />
-          </a>
+          <img alt="Curly Elements logo" src={logo} />
         </Grid>
         <Typography variant="body2">
           v{packageJson.version} - Updated: {dateUpdated}

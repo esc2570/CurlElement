@@ -30,7 +30,5 @@
  * with your contact information to: robert.a.kayl.civ@mail.mil
  * Government Agency Point of Contact for Original Software - Program Manager: robert.a.kayl.civ@mail.mil
  */
-
-export { default as EULA } from './EULA/EULA';
 export { default as Layout } from './Layout/Layout';
 export { default as PageNotFound } from './PageNotFound/PageNotFound';

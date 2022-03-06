@@ -31,16 +31,10 @@
  * Government Agency Point of Contact for Original Software - Program Manager: robert.a.kayl.civ@mail.mil
  */
 import { CircularProgress } from '@mui/material';
-import { EULA, PageNotFound } from 'components';
-import AccountSetup from 'components/AccountSetup/AccountSetup';
-import Login from 'components/Login/Login';
-import NewPin from 'components/NewPin/NewPin';
-import PinReset from 'components/PinReset/PinReset';
 import { Home } from 'pages';
 import { lazy, Suspense } from 'react';
 import FadeIn from 'react-fade-in';
 import { Route, Routes } from 'react-router-dom';
-import { RequireAuth } from './RequireAuth';
 
 // We load each route, when lazy loading, only as they're
 // called by the user. The Home page is not lazily loaded
@@ -49,7 +43,7 @@ import { RequireAuth } from './RequireAuth';
 // homescreen loaded in memory as it is a page often visited.
 // React.lazy only supports default imports.
 
-const About = lazy(() => import('components/About/About'));
+const ProductScan = lazy(() => import('components/About/ProductScan'));
 // const Home = lazy(() => import('../../pages/Home/Home'));
 
 const AppRoutes = () => (
@@ -71,17 +65,9 @@ const AppRoutes = () => (
     }
   >
     <Routes>
-      <Route element={<EULA />} path="/eula" />
-      <Route element={<Login />} path="/login" />
-      <Route element={<AccountSetup />} path="/accountSetup" />
       {/* The RequireAuth component is a wrapper for all the routes that require authentication */}
-      <Route element={<RequireAuth />}>
-        <Route element={<Home />} path="/" />
-        <Route element={<About />} path="/about" />
-      </Route>
-      <Route element={<NewPin />} path="/newPin" />
-      <Route element={<PinReset />} path="/pinReset" />
-      <Route element={<PageNotFound />} path="*" />
+      <Route element={<Home />} path="/" />
+      <Route element={<ProductScan />} path="/ProductScan" />
     </Routes>
   </Suspense>
 );

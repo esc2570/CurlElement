@@ -35,7 +35,6 @@ import { StyledEngineProvider, ThemeProvider as MuiThemeProvider } from '@mui/ma
 import { Layout } from 'components';
 import { AppRoutes } from 'pages';
 import { AuthProvider } from 'providers/AuthProvider';
-import { DatabaseProvider } from 'providers/DatabaseProvider';
 import DialogProvider from 'providers/DialogProvider';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -49,15 +48,13 @@ const App = () => {
       <PersistGate persistor={persistor}>
         <StyledEngineProvider injectFirst>
           <MuiThemeProvider theme={theme}>
-            <DatabaseProvider>
-              <DialogProvider>
-                <AuthProvider>
-                  <Layout>
-                    <AppRoutes />
-                  </Layout>
-                </AuthProvider>
-              </DialogProvider>
-            </DatabaseProvider>
+            <DialogProvider>
+              <AuthProvider>
+                <Layout>
+                  <AppRoutes />
+                </Layout>
+              </AuthProvider>
+            </DialogProvider>
           </MuiThemeProvider>
         </StyledEngineProvider>
       </PersistGate>
